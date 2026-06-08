@@ -44,3 +44,16 @@ export const scoreResultSchema = z.object({
 });
 
 export type ScoreResult = z.infer<typeof scoreResultSchema>;
+
+/**
+ * What `/api/replay` emits per SSE "transaction" event: a held-out
+ * transaction enriched with the model's score (spec §06 "Replay / stream").
+ * The client validates against this too — payloads crossing any boundary,
+ * including our own server-to-browser one, get checked (spec §08).
+ */
+export const replayEventSchema = z.object({
+  transaction: transactionSchema,
+  score: scoreResultSchema,
+});
+
+export type ReplayEvent = z.infer<typeof replayEventSchema>;
