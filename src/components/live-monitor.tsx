@@ -46,7 +46,7 @@ export function LiveMonitor() {
               justFlagged
                 ? "live-dot--flagged h-2.5 w-2.5 rounded-full"
                 : status === "live"
-                  ? "live-dot h-2.5 w-2.5 rounded-full bg-muted-foreground"
+                  ? "live-dot h-2.5 w-2.5 rounded-full bg-live"
                   : "h-2.5 w-2.5 rounded-full bg-muted-foreground/30"
             }
           />

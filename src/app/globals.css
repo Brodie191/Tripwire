@@ -9,6 +9,7 @@
   --color-foreground: var(--foreground);
   --color-signal: var(--signal);
   --color-signal-foreground: var(--signal-foreground);
+  --color-live: var(--live);
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
   --font-mono: var(--font-mono);
@@ -79,6 +80,14 @@
   --signal: #d8232a;
   --signal-foreground: oklch(0.96 0 0);
   --destructive: var(--signal);
+
+  /*
+    A deliberate, scoped exception to "no green" (spec §07): used solely by
+    the live-feed indicator to mean "connected", never "cleared" or "good".
+    Keeps the fraud-status vocabulary monochrome-plus-signal-red everywhere
+    that actually carries a fraud verdict.
+  */
+  --live: #2bd66b;
 
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 12%);

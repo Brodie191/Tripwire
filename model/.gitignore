@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# raw / intermediate data — large, regenerable from the acquisition script
+data/*
+!data/.gitkeep
+
+# experiment tracking & notebook checkpoints
+wandb/
+.ipynb_checkpoints/
+
+# exported model artefacts (handled by the export step / Modal deploy, not git)
+artifacts/

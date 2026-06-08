@@ -1,0 +1,11 @@
+# Tripwire — data & model (spec §04, §05). Python 3.12; xgboost/shap wheels
+# lag the newest CPython releases, hence the pinned-minor venv.
+pandas
+numpy
+scikit-learn
+xgboost
+shap
+matplotlib
+kagglehub      # acquires the Sparkov dataset from Kaggle without manual API setup
+wandb          # experiment tracking (spec §03: "tracked in Weights & Biases")
+jupyter
