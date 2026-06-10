@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python -c \"import modal; print\\([x for x in dir\\(modal\\) if 'mount' in x.lower\\(\\) or 'Mount' in x]\\)\")"
+    ]
+  }
+}

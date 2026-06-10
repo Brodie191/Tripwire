@@ -4,8 +4,10 @@ pandas
 numpy
 scikit-learn
 xgboost
-shap
+shap==0.52.0
 matplotlib
 kagglehub      # acquires the Sparkov dataset from Kaggle without manual API setup
 wandb          # experiment tracking (spec §03: "tracked in Weights & Biases")
+pyarrow
+modal
 jupyter
